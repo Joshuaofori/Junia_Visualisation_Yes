@@ -42,10 +42,12 @@ def get_seaplot():
     sns.pairplot(df, hue="species")
     graph = get_graph
     return graph
-def get_first():
+
+
+def get_first(f):
     """########"""
     #Traitement
-    rooms = pd.read_csv("/home/joshua/Downloads/csv_ISEN1.csv",sep=";")
+    rooms = pd.read_csv(f,sep=";")
     #print(rooms)
     #print(rooms.info())
 

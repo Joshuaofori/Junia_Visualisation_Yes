@@ -8,6 +8,12 @@
             {% if chart %}
             <img src="data:image/png;base64, {{chart|safe}}">
             {% endif %}
+            {% if not chart %}
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="data_file">
+                <button type="submit">Upload</button>
+            </form>
+            {% endif %}
         </div>
     </div>
 </div>
