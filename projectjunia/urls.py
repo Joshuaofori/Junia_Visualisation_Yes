@@ -18,8 +18,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from visualisation.views import main_view
+from visualisation.views import my_view
+from visualisation.views import second_view
+from visualisation.views import third_view
+from visualisation.views import fourth_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('',main_view,name='main_view'),
+    path('',my_view,name='main_view'),
+    path('forms',my_view,name='upload file'),
+    path('secondview',second_view),
+    path('thirdview',third_view),
+    path('fourthview',fourth_view)
 ]

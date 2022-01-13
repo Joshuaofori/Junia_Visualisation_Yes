@@ -27,7 +27,7 @@ def get_graph():
 
 def get_plot(x,y):
     plt.switch_backend('AGG')
-    plt.figure(figsize=(10,5))
+    plt.figure(figsize=(10,7))
     plt.title('visualisation')
     plt.plot(x,y)
     plt.xticks(rotation=45)
@@ -97,5 +97,5 @@ def get_first():
     axes.yaxis.set_ticklabels(['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi','Samedi','Dimanche'],rotation = 0)
     axes.set_xlabel('année scolaire 2020/2021')
     axes.set_ylabel("jour de la semaine")
-    graph = get_graph();
-    return graph;
+    graph = get_graph()
+    return graph
